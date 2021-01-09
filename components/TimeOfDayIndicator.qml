@@ -2,8 +2,8 @@ import QtQuick 2.12
 
 Image{
     id: timeIndicator
-    sourceSize.height: hiddenImg.sourceSize.height*1.6
-    sourceSize.width: hiddenImg.sourceSize.width*1.6
+    sourceSize.height: hiddenImg.sourceSize.height*1.3
+    sourceSize.width: hiddenImg.sourceSize.width*1.3
     source: "../assets/moon.svg"
 
     Image {

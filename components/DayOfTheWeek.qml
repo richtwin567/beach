@@ -7,42 +7,47 @@ Item{
     height:longday.height
 
 
-Text {
-    id: longday
-    text: "WEDNESDAY"
-    font{
-        family: fonts.b612mono.name
-        pointSize: 45
-        capitalization: Font.AllUppercase
-    }
-    color: colours.transparent
-}
-Text{
-    id:visibleDay
-
-    color: colours.white
-    anchors.right: longday.right
-    anchors.rightMargin: 0
-    //horizontalAlignment: Text.AlignRight
-    font{
-        family: fonts.b612mono.name
-        pointSize: 45
-        capitalization: Font.AllUppercase
+    Text {
+        id: longday
+        text: "WEDNESDAY"
+        font{
+            family: fonts.b612mono.name
+            pointSize: 45
+            capitalization: Font.AllUppercase
+        }
+        color: colours.transparent
     }
 
-    function update(){
-        const date = new Date();
-        text = Qt.formatDate(date, "dddd");
+    Text{
+        id:visibleDay
+
+        color: colours.white
+        anchors.right: longday.right
+        anchors.rightMargin: 0
+        font{
+            family: fonts.b612mono.name
+            pointSize: 45
+            capitalization: Font.AllUppercase
+        }
+
+        function update(){
+            const date = new Date();
+            text = Qt.formatDate(date, "dddd");
+        }
     }
 
     Timer{
         interval: 1000
         running: true
         repeat: true
-        onTriggered: update()
+        onTriggered: {
+            visibleDay.update();
+        }
     }
 
-    Component.onCompleted: update()
-}
+    Component.onCompleted:{
+        visibleDay.update();
+    }
+
 }
 
