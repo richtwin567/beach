@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>components/Fonts.qml</file>
+        <file>components/PaletteColours.qml</file>
+        <file>components/ControlBar.qml</file>
+        <file>components/SystemControlsModel.qml</file>
+        <file>components/Background.qml</file>
+        <file>components/UserChooser.qml</file>
+        <file>components/LoginButton.qml</file>
+        <file>components/PasswordInput.qml</file>
+        <file>components/Separator.qml</file>
+        <file>components/TimeOfDayIndicator.qml</file>
+        <file>components/DayOfTheWeek.qml</file>
+        <file>components/TimeText.qml</file>
+        <file>components/DateText.qml</file>
+        <file>components/CapsLockIndicator.qml</file>
+    </qresource>
+</RCC>
