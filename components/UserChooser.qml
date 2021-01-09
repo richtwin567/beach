@@ -69,7 +69,6 @@ ComboBox{
         font.family: fonts.robotoCondensed.name
         color: colours.middleGreyBrown
         font.pointSize: 18
-        opacity: 0.6
     }
 
     indicator: Canvas{
@@ -78,7 +77,6 @@ ComboBox{
         anchors.verticalCenter: parent.verticalCenter
         anchors.right: parent.right
         anchors.rightMargin: 5
-        opacity: 0.6
         contextType: "2d"
         onPaint: {
             context.reset();

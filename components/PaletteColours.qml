@@ -6,7 +6,7 @@ QtObject{
     readonly property color white: "#ffffff"
     readonly property color mintCream: "#DDEAE3"
     readonly property color silverChaliceBrown: "#B2AFA0"
-    readonly property color middleGreyBrown: "#624F38"
+    readonly property color middleGreyBrown: "#99624F38"
     readonly property color transparent: "transparent"
     readonly property color chinaRoseRed: "#A04668"
 }
