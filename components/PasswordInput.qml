@@ -37,26 +37,24 @@ TextField{
 
             PropertyChanges {
                 target: bg
-                color: colours.chinaRoseRed
+                color: colours.sugarPlumRed
             }
         }
     ]
 
     transitions: [
+        Transition {
+            id: transition
+            reversible: true
+            from: "*"
+            to: "*"
 
-           Transition {
-               id: transition
-               reversible: true
-               from: "*"
-               to: "*"
-
-               ColorAnimation {
-                   target: bg
-                   duration: 100
-               }
-
-           }
-       ]
+            ColorAnimation {
+                target: bg
+                duration: 100
+            }
+        }
+    ]
 
     background: Rectangle{
         id: bg
@@ -64,13 +62,4 @@ TextField{
         color: colours.blizzardBlue
         border.color: colours.transparent
     }
-
-
-
 }
-
-/*##^##
-Designer {
-    D{i:0;autoSize:true;height:480;width:640}
-}
-##^##*/
